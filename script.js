@@ -12,11 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------- Menu mobile ----------
     const ham = document.getElementById('ham');
     const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('menu-overlay');
     const iconOpen = document.getElementById('icon-open');
     const iconClose = document.getElementById('icon-close');
   
     function toggleMenu() {
       const open = mobileMenu.classList.toggle('open');
+      overlay.classList.toggle('open', open);
+      document.body.classList.toggle('menu-locked', open);
       iconOpen.style.display = open ? 'none' : 'block';
       iconClose.style.display = open ? 'block' : 'none';
       ham.setAttribute('aria-expanded', open);
@@ -24,13 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function closeMenu() {
       mobileMenu.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.classList.remove('menu-locked');
       iconOpen.style.display = 'block';
       iconClose.style.display = 'none';
       ham.setAttribute('aria-expanded', 'false');
     }
   
     if (ham) ham.addEventListener('click', toggleMenu);
+    if (overlay) overlay.addEventListener('click', closeMenu);
     mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
   
     // ---------- Voltar ao topo ----------
     const toTop = document.getElementById('to-top');
