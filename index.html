@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karen Santos — Arquitetura & Urbanismo</title>
+  <meta name="description" content="Karen Santos, Arquiteta e Urbanista CAU/SP. Projetos de regularização, desdobro e usucapião, Bombeiros/CETESB e Vigilância Sanitária em São Paulo." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%236d3fa0'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='white' text-anchor='middle'%3EKS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-brand">
+    Karen Santos
+    <span>Arquitetura & Urbanismo</span>
+  </a>
+  <div class="nav-links">
+    <a href="#sobre" data-nav>Sobre</a>
+    <a href="#processo" data-nav>Processo</a>
+    <a href="#servicos" data-nav>Serviços</a>
+    <a href="#contato" data-nav>Contato</a>
+    <a href="#contato" class="btn btn-primary" style="margin-left:.5rem">Fale Comigo</a>
+  </div>
+  <button id="ham" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg id="icon-open" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+    </svg>
+    <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+</nav>
+<div id="mobile-menu">
+  <a href="#sobre">Sobre</a>
+  <a href="#processo">Processo</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contato">Contato</a>
+</div>
+<div id="menu-overlay"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-img"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-lilac"></div>
+  <div class="hero-line"></div>
+  <div class="hero-ticks"><span></span><span></span></div>
+  <div class="hero-content">
+    <span class="label">Arquiteta & Urbanista — São Paulo</span>
+    <h1>Karen<br>Santos</h1>
+    <p>Do projeto à aprovação, cada etapa conduzida com rigor técnico e atenção ao detalhe.</p>
+    <div class="hero-ctas">
+      <a href="#servicos" class="btn btn-primary">Ver Serviços</a>
+      <a href="#contato" class="btn btn-ghost">Entrar em Contato</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="container">
+    <div class="grid">
+      <div class="about-img-wrap reveal blueprint-frame">
+        <div class="about-img-dec"></div>
+        <img src="https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?w=800&h=1000&fit=crop&auto=format" alt="Prancha e materiais de um projeto arquitetônico sobre a mesa" loading="lazy" />
+      </div>
+      <div class="about-text reveal">
+        <span class="section-label">Sobre</span>
+        <h2 class="section-title" style="margin-bottom:1.8rem">Transformando<br><em>visões em espaços</em></h2>
+        <p>Arquiteta e Urbanista registrada no CAU, com atuação especializada em projetos de regularização, aprovações e licenciamentos junto aos órgãos municipais, estaduais e de segurança.</p>
+        <p>Cada projeto é conduzido com rigor técnico, transparência e comprometimento, buscando sempre as melhores soluções dentro da legislação vigente.</p>
+        <div class="about-tags">
+          <span class="about-tag">Regularização</span>
+          <span class="about-tag">Desdobro & Usucapião</span>
+          <span class="about-tag">Bombeiros & CETESB</span>
+          <span class="about-tag">Vigilância Sanitária</span>
+        </div>
+        <div class="about-sig">
+          <div class="sig-avatar">KS</div>
+          <div>
+            <div class="sig-name">Karen Santos</div>
+            <div class="sig-role">Arquiteta & Urbanista · CAU/SP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section id="processo" class="grid-paper">
+  <div class="container">
+    <div class="processo-head reveal">
+      <div>
+        <span class="section-label">Como funciona</span>
+        <h2 class="section-title">Da análise<br>à <em>aprovação</em></h2>
+      </div>
+      <p class="processo-note">Um método claro para tirar seu processo do papel e levá-lo até a aprovação final.</p>
+    </div>
+    <div class="processo-track">
+      <div class="processo-grid reveal-stagger">
+        <div class="processo-step reveal" style="--i:0">
+          <span class="processo-num">01</span>
+          <h3>Diagnóstico</h3>
+          <p>Análise da situação do imóvel e levantamento de toda a documentação necessária.</p>
+        </div>
+        <div class="processo-step reveal" style="--i:1">
+          <span class="processo-num">02</span>
+          <h3>Projeto Técnico</h3>
+          <p>Elaboração do projeto conforme legislação municipal, estadual e normas técnicas vigentes.</p>
+        </div>
+        <div class="processo-step reveal" style="--i:2">
+          <span class="processo-num">03</span>
+          <h3>Protocolo</h3>
+          <p>Submissão do processo junto aos órgãos competentes: Prefeitura, Bombeiros, CETESB e Vigilância Sanitária.</p>
+        </div>
+        <div class="processo-step reveal" style="--i:3">
+          <span class="processo-num">04</span>
+          <h3>Aprovação</h3>
+          <p>Acompanhamento até a aprovação final e entrega de toda a documentação regularizada.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="container">
+    <div class="services-head reveal">
+      <div>
+        <span class="section-label">Serviços</span>
+        <h2 class="section-title">O que posso<br>fazer por você</h2>
+      </div>
+      <p class="services-note">Soluções completas do projeto à aprovação final nos órgãos competentes.</p>
+    </div>
+    <div class="services-grid reveal-stagger">
+      <div class="service-card reveal" style="--i:0">
+        <div class="service-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01M9 7h.01M15 7h.01"/>
+            </svg>
+          </div>
+          <span class="sheet-code">PR.01</span>
+        </div>
+        <h3>Construção e Regularização</h3>
+        <p>Acompanhamento completo do processo construtivo com toda a documentação técnica e legal para regularização junto aos órgãos competentes.</p>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card reveal" style="--i:1">
+        <div class="service-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="1"/><path d="M12 3v18M3 12h18"/>
+            </svg>
+          </div>
+          <span class="sheet-code">PR.02</span>
+        </div>
+        <h3>Desdobro e Usucapião</h3>
+        <p>Assessoria técnica especializada em desdobro de lotes e processos de usucapião, garantindo a segurança jurídica da sua propriedade.</p>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card reveal" style="--i:2">
+        <div class="service-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2c1 3-2 4-2 7a3 3 0 006 0c0-1-1-2-1-3 2 1 3 3 3 5a5 5 0 01-10 0c0-4 2-6 4-9z"/>
+            </svg>
+          </div>
+          <span class="sheet-code">PR.03</span>
+        </div>
+        <h3>Bombeiro e CETESB</h3>
+        <p>Elaboração e aprovação de projetos de prevenção e combate a incêndio, e licenciamentos ambientais junto à CETESB.</p>
+        <div class="service-line"></div>
+      </div>
+      <div class="service-card reveal" style="--i:3">
+        <div class="service-top">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/><path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <span class="sheet-code">PR.04</span>
+        </div>
+        <h3>Vigilância Sanitária</h3>
+        <p>Projetos e processos de licenciamento sanitário para estabelecimentos comerciais, industriais e de saúde.</p>
+        <div class="service-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section id="cta-band">
+  <div class="cta-inner">
+    <div>
+      <small>Pronta para ajudar</small>
+      <h2>Tem um projeto em mente?</h2>
+    </div>
+    <a href="#contato" class="btn btn-white">Vamos Conversar ↗</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <div class="grid">
+      <div class="reveal">
+        <span class="section-label">Contato</span>
+        <h2 class="section-title" style="margin-bottom:.8rem">Entre em<br><em>contato</em></h2>
+        <p style="color:var(--muted);font-weight:300;max-width:320px;line-height:1.7;margin-top:1rem">
+          Estou disponível para analisar seu projeto e orientar sobre os melhores caminhos para sua necessidade.
+        </p>
+        <div class="contact-items">
+          <a href="https://wa.me/5511974376984" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012.18 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.26 9.91a16 16 0 006.83 6.83l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-lbl">Telefone / WhatsApp</div>
+              <div class="contact-val">+55 (11) 9.7437-6984</div>
+            </div>
+          </a>
+          <a href="mailto:arquitetakaren3@gmail.com" class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-lbl">E-mail</div>
+              <div class="contact-val">arquitetakaren3@gmail.com</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-lbl">Atendimento</div>
+              <div class="contact-val">São Paulo e Região Metropolitana</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal blueprint-frame">
+        <h3>Envie uma mensagem</h3>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Nome</label>
+              <input id="f-name" type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="field">
+              <label for="f-phone">Telefone</label>
+              <input id="f-phone" type="tel" placeholder="(11) 9 0000-0000" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-email">E-mail</label>
+            <input id="f-email" type="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="field">
+            <label for="f-service">Serviço de interesse</label>
+            <select id="f-service">
+              <option value="">Selecione um serviço</option>
+              <option>Construção e Regularização</option>
+              <option>Desdobro e Usucapião</option>
+              <option>Bombeiro e CETESB</option>
+              <option>Vigilância Sanitária</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Mensagem</label>
+            <textarea id="f-msg" rows="4" placeholder="Descreva seu projeto ou dúvida..." required></textarea>
+          </div>
+          <button type="submit" class="btn-form">
+            Enviar pelo WhatsApp
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <p class="form-hint" id="form-hint">Abre o WhatsApp com a mensagem pronta para envio.</p>
+          <div id="form-status" class="form-status" hidden></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-brand">Karen Santos — Arquitetura & Urbanismo</span>
+  <small>© <span id="yr"></span> Karen Santos. Todos os direitos reservados.</small>
+  <button id="to-top" aria-label="Voltar ao topo">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
